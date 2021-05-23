@@ -738,3 +738,65 @@
 // };
 
 // console.log(atTheOldToad.updatePotionName("Дыхание дракона", "Полиморф"));
+
+//!____________________________________________________________________________________
+//*____________________________________________________________________________________
+//?___________________________________________________________________________________
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+// console.log(reverseString("hello"));
+
+function factorialize(num) {
+  let total = 1;
+
+  for (let i = 1; i <= num; i += 1) {
+    total *= i;
+  }
+  return total;
+}
+
+factorialize(10);
+//!-----------------------------------------------------------------------------------------
+// function findLongestWordLength(str) {
+//   let words = str.split(" ");
+//   //   console.log(words);
+//   let maxWordLength = 0;
+
+//   for (let i = 0; i < words.length; i += 1) {
+//     if (words[i].length > maxWordLength) {
+//       maxWordLength = words[i].length;
+//       //   console.log(maxWordLength);
+//     }
+//   }
+//   return maxWordLength;
+// }
+
+// findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+//!-----------------------------------------------------------------------------------------
+
+function largestOfFour(arr) {
+  const arrLarge = arr.flatMap((array) => Math.max(...array));
+
+  return arrLarge;
+}
+
+// console.log(
+//   largestOfFour([
+//     [4, 5, 1, 3],
+//     [13, 27, 18, 26],
+//     [32, 35, 37, 39],
+//     [1000, 1001, 857, 1],
+//   ])
+// );
+
+//*------------------------------------------------------------------------------------------
+
+function repeatStringNumTimes(str, num) {
+  return str * num;
+}
+
+// console.log(repeatStringNumTimes("abc", 3));
